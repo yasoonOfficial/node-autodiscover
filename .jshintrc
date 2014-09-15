@@ -1,0 +1,14 @@
+{
+  "eqeqeq": true,
+  "newcap": true,
+  "quotmark": "single",
+  "maxlen": 120,
+  "undef": true,
+
+  "devel": true,
+  "node": true,
+  "globals": {
+    "describe": true,
+    "it": true
+  }
+}

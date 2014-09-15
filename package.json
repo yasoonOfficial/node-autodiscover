@@ -1,0 +1,35 @@
+{
+  "name": "autodiscover",
+  "version": "0.0.1",
+  "description": "A Node.js wrapper for Microsoft Autodiscover",
+  "author": "teloo",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/teloo/node-autodiscover/blob/master/LICENSE"
+    }
+  ],
+  "repository": "teloo/node-autodiscover",
+  "main": "lib",
+  "engines": {
+    "node": ">=0.10.31"
+  },
+  "dependencies": {
+    "underscore": "1.7.0",
+    "validator": "3.18.1",
+    "request": "2.42.0",
+    "async": "0.9.0",
+    "xmlbuilder": "2.4.4"
+  },
+  "devDependencies": {
+    "grunt": "0.4.5",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-simple-mocha": "0.4.0",
+    "mocha": "1.21.4",
+    "expect.js": "0.3.1"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
