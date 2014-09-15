@@ -3,6 +3,8 @@ Node Autodiscover [![Build Status](https://travis-ci.org/teloo/node-autodiscover
 
 A Node.js wrapper for Microsoft Autodiscover
 
+UNDER DEVELOPMENT
+
 ## Installation
 
 ```shell
