@@ -4,9 +4,9 @@ var autodiscover = require('../lib');
 var VALID_MAIL_ADDRESS = 'test@test.com';
 var VALID_PASSWORD = 'password';
 
-describe('getUrl', function() {
+describe('getEwsUrl', function() {
   it('cause error when mail address is undefined', function(done) {
-    autodiscover.getUrl(undefined, VALID_PASSWORD, function(err, url) {
+    autodiscover.getEwsUrl(undefined, VALID_PASSWORD, function(err, url) {
       expect(err.message).to.be('mailAddress is needed');
       expect(url).to.be(undefined);
       done();
@@ -14,7 +14,7 @@ describe('getUrl', function() {
   });
 
   it('cause error when mail address is null', function(done) {
-    autodiscover.getUrl(null, VALID_PASSWORD, function(err, url) {
+    autodiscover.getEwsUrl(null, VALID_PASSWORD, function(err, url) {
       expect(err.message).to.be('mailAddress is needed');
       expect(url).to.be(undefined);
       done();
@@ -22,7 +22,7 @@ describe('getUrl', function() {
   });
 
   it('cause error when mail address is invalid', function(done) {
-    autodiscover.getUrl('invalid', VALID_PASSWORD, function(err, url) {
+    autodiscover.getEwsUrl('invalid', VALID_PASSWORD, function(err, url) {
       expect(err.message).to.be('Invalid format: invalid');
       expect(url).to.be(undefined);
       done();
@@ -30,7 +30,7 @@ describe('getUrl', function() {
   });
 
   it('cause error when password is undefined', function(done) {
-    autodiscover.getUrl(VALID_MAIL_ADDRESS, undefined, function(err, url) {
+    autodiscover.getEwsUrl(VALID_MAIL_ADDRESS, undefined, function(err, url) {
       expect(err.message).to.be('password is needed');
       expect(url).to.be(undefined);
       done();
@@ -38,7 +38,7 @@ describe('getUrl', function() {
   });
 
   it('cause error when password is null', function(done) {
-    autodiscover.getUrl(VALID_MAIL_ADDRESS, null, function(err, url) {
+    autodiscover.getEwsUrl(VALID_MAIL_ADDRESS, null, function(err, url) {
       expect(err.message).to.be('password is needed');
       expect(url).to.be(undefined);
       done();
