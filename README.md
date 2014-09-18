@@ -1,9 +1,7 @@
 Node Autodiscover [![Build Status](https://travis-ci.org/teloo/node-autodiscover.svg?branch=master)](https://travis-ci.org/teloo/node-autodiscover)
 =======
 
-A Node.js wrapper for Microsoft Autodiscover
-
-UNDER DEVELOPMENT
+A Node.js client for Microsoft's POX Autodiscover Service
 
 ## Installation
 
@@ -16,13 +14,21 @@ $ npm install autodiscover
 ```javascript
 var autodiscover = require('autodiscover');
 
-autodiscover.getUrl('<email_address>', '<password>', function(err, url) {
+autodiscover.getEwsUrl('<email_address>', '<password>', function(err, ewsUrl) {
   if (err) {
     throw err;
   }
-  console.log(url);
+  console.log(ewsUrl);
 });
 ```
+
+## Limitations
+
+* I only test in Exchange Online
+
+* SCP lookup isn't available
+
+* Doesn't query DNS for an SRV record
 
 ## License
 
