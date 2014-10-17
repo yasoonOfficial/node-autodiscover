@@ -14,7 +14,7 @@ $ npm install autodiscover
 ```javascript
 var autodiscover = require('autodiscover');
 
-autodiscover.getEwsUrl('<email_address>', '<password>', function(err, ewsUrl) {
+autodiscover.getEwsUrl('<email_address>', {username: '<username>', password: '<password>'}, function(err, ewsUrl) {
   if (err) {
     throw err;
   }
