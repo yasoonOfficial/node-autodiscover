@@ -1,6 +1,6 @@
 {
   "name": "autodiscover",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Node.js client for Microsoft's POX Autodiscover Service",
   "author": "teloo",
   "licenses": [
