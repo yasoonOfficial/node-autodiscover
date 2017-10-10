@@ -14,11 +14,11 @@ $ npm install autodiscover
 ```javascript
 var autodiscover = require('autodiscover');
 
-autodiscover.getEwsUrl('<email_address>', {username: '<username>', password: '<password>'}, function(err, ewsUrl) {
+autodiscover.getPOXAutodiscoverValues('<email_address>', {username: '<username>', password: '<password>'}, function(err, data) {
   if (err) {
     throw err;
   }
-  console.log(ewsUrl);
+  console.log(data);
 });
 ```
 
