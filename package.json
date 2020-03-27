@@ -15,12 +15,12 @@
     "node": ">=0.10.31"
   },
   "dependencies": {
-    "underscore": "1.7.0",
-    "validator": "^3.18.1",
-    "request": "^2.42.0",
-    "async": "0.9.0",
-    "xmlbuilder": "2.4.4",
-    "xml2js": "0.4.4"
+    "async": "^0.9.0",
+    "request": "^2.88.2",
+    "underscore": "^1.7.0",
+    "validator": "^3.43.0",
+    "xml2js": "^0.4.4",
+    "xmlbuilder": "^2.4.4"
   },
   "devDependencies": {
     "grunt": "0.4.5",
